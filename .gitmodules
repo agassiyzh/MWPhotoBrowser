@@ -1,0 +1,3 @@
+[submodule "MWPhotoBrowser/3rdParty/SDWebImage"]
+	path = MWPhotoBrowser/3rdParty/SDWebImage
+	url = https://github.com/rs/SDWebImage
