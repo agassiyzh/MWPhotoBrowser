@@ -314,9 +314,15 @@ navigationBarBackgroundImageLandscapePhone = _navigationBarBackgroundImageLandsc
 - (void) startAnimation
 {
     // Calculate new image size and position
-    float scaleRatio = self.view.frame.size.width / entranceImg.image.size.width;
-    float newHeight = scaleRatio * entranceImg.image.size.height;
-    float originCenterY = entranceImg.center.y;
+    float scaleRatio = 1;
+    float newHeight = self.view.frame.size.height;
+    float originCenterY = self.view.center.y;
+    
+    if (entranceImg) {
+        newHeight = scaleRatio * entranceImg.image.size.height;
+        scaleRatio = self.view.frame.size.width / entranceImg.image.size.width;
+        originCenterY = entranceImg.center.y;
+    }
     
     [entranceImg setHidden:YES];
     UIImageView *eImgCopy = [[UIImageView alloc] initWithFrame:entranceImg.frame];
