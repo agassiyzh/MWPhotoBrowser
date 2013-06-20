@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Menu.h"
 
-#import "ViewController.h"
 
 @implementation AppDelegate
 
@@ -16,7 +16,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-  self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+  Menu *menu = [[Menu alloc] initWithStyle:UITableViewStylePlain];
+  self.viewController =(UIViewController *)[[UINavigationController alloc] initWithRootViewController:menu];
   self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

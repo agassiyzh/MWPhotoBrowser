@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		297698BAE78C48E493628DFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D3D138B7294F2CB5D10E36 /* libPods.a */; };
 		49477A101772A45500764A1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49477A0F1772A45500764A1B /* UIKit.framework */; };
 		49477A121772A45500764A1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49477A111772A45500764A1B /* Foundation.framework */; };
 		49477A141772A45500764A1B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49477A131772A45500764A1B /* CoreGraphics.framework */; };
@@ -16,8 +17,17 @@
 		49477A221772A45500764A1B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 49477A211772A45500764A1B /* Default.png */; };
 		49477A241772A45500764A1B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49477A231772A45500764A1B /* Default@2x.png */; };
 		49477A261772A45500764A1B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49477A251772A45500764A1B /* Default-568h@2x.png */; };
-		49477A291772A45500764A1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49477A281772A45500764A1B /* ViewController.m */; };
-		49477A2C1772A45500764A1B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49477A2A1772A45500764A1B /* ViewController.xib */; };
+		49477A441772D7C400764A1B /* MWCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49477A381772D7C400764A1B /* MWCaptionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		49477A451772D7C400764A1B /* MWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 49477A3A1772D7C400764A1B /* MWPhoto.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		49477A461772D7C400764A1B /* MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49477A3C1772D7C400764A1B /* MWPhotoBrowser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		49477A471772D7C400764A1B /* MWTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49477A3F1772D7C400764A1B /* MWTapDetectingImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		49477A481772D7C400764A1B /* MWTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49477A411772D7C400764A1B /* MWTapDetectingView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		49477A491772D7C400764A1B /* MWZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49477A431772D7C400764A1B /* MWZoomingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		49477A4C1772D7D600764A1B /* MWPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 49477A4B1772D7D600764A1B /* MWPhotoBrowser.bundle */; };
+		49477A501772D81D00764A1B /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 49477A4E1772D81D00764A1B /* Menu.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		49477A511772D81D00764A1B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49477A4F1772D81D00764A1B /* Localizable.strings */; };
+		49477A541772D9E700764A1B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49477A521772D9E700764A1B /* ImageIO.framework */; };
+		49477A551772D9E700764A1B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49477A531772D9E700764A1B /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +44,27 @@
 		49477A211772A45500764A1B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		49477A231772A45500764A1B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		49477A251772A45500764A1B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		49477A271772A45500764A1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		49477A281772A45500764A1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		49477A2B1772A45500764A1B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		49477A371772D7C400764A1B /* MWCaptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCaptionView.h; sourceTree = "<group>"; };
+		49477A381772D7C400764A1B /* MWCaptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCaptionView.m; sourceTree = "<group>"; };
+		49477A391772D7C400764A1B /* MWPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhoto.h; sourceTree = "<group>"; };
+		49477A3A1772D7C400764A1B /* MWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhoto.m; sourceTree = "<group>"; };
+		49477A3B1772D7C400764A1B /* MWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowser.h; sourceTree = "<group>"; };
+		49477A3C1772D7C400764A1B /* MWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowser.m; sourceTree = "<group>"; };
+		49477A3D1772D7C400764A1B /* MWPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoProtocol.h; sourceTree = "<group>"; };
+		49477A3E1772D7C400764A1B /* MWTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTapDetectingImageView.h; sourceTree = "<group>"; };
+		49477A3F1772D7C400764A1B /* MWTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTapDetectingImageView.m; sourceTree = "<group>"; };
+		49477A401772D7C400764A1B /* MWTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTapDetectingView.h; sourceTree = "<group>"; };
+		49477A411772D7C400764A1B /* MWTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTapDetectingView.m; sourceTree = "<group>"; };
+		49477A421772D7C400764A1B /* MWZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWZoomingScrollView.h; sourceTree = "<group>"; };
+		49477A431772D7C400764A1B /* MWZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWZoomingScrollView.m; sourceTree = "<group>"; };
+		49477A4B1772D7D600764A1B /* MWPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MWPhotoBrowser.bundle; sourceTree = "<group>"; };
+		49477A4D1772D81D00764A1B /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		49477A4E1772D81D00764A1B /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		49477A4F1772D81D00764A1B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		49477A521772D9E700764A1B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		49477A531772D9E700764A1B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B9D3D138B7294F2CB5D10E36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14231183CEF469897A93A70 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +75,9 @@
 				49477A101772A45500764A1B /* UIKit.framework in Frameworks */,
 				49477A121772A45500764A1B /* Foundation.framework in Frameworks */,
 				49477A141772A45500764A1B /* CoreGraphics.framework in Frameworks */,
+				297698BAE78C48E493628DFA /* libPods.a in Frameworks */,
+				49477A541772D9E700764A1B /* ImageIO.framework in Frameworks */,
+				49477A551772D9E700764A1B /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +87,12 @@
 		49477A031772A45500764A1B = {
 			isa = PBXGroup;
 			children = (
+				49477A4A1772D7CE00764A1B /* Resources */,
+				49477A361772D7C400764A1B /* src */,
 				49477A151772A45500764A1B /* Demo */,
 				49477A0E1772A45500764A1B /* Frameworks */,
 				49477A0D1772A45500764A1B /* Products */,
+				E14231183CEF469897A93A70 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +107,12 @@
 		49477A0E1772A45500764A1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49477A521772D9E700764A1B /* ImageIO.framework */,
+				49477A531772D9E700764A1B /* MessageUI.framework */,
 				49477A0F1772A45500764A1B /* UIKit.framework */,
 				49477A111772A45500764A1B /* Foundation.framework */,
 				49477A131772A45500764A1B /* CoreGraphics.framework */,
+				B9D3D138B7294F2CB5D10E36 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,11 +120,11 @@
 		49477A151772A45500764A1B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				49477A4D1772D81D00764A1B /* Menu.h */,
+				49477A4E1772D81D00764A1B /* Menu.m */,
+				49477A4F1772D81D00764A1B /* Localizable.strings */,
 				49477A1E1772A45500764A1B /* AppDelegate.h */,
 				49477A1F1772A45500764A1B /* AppDelegate.m */,
-				49477A271772A45500764A1B /* ViewController.h */,
-				49477A281772A45500764A1B /* ViewController.m */,
-				49477A2A1772A45500764A1B /* ViewController.xib */,
 				49477A161772A45500764A1B /* Supporting Files */,
 			);
 			path = Demo;
@@ -107,6 +144,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		49477A361772D7C400764A1B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				49477A371772D7C400764A1B /* MWCaptionView.h */,
+				49477A381772D7C400764A1B /* MWCaptionView.m */,
+				49477A391772D7C400764A1B /* MWPhoto.h */,
+				49477A3A1772D7C400764A1B /* MWPhoto.m */,
+				49477A3B1772D7C400764A1B /* MWPhotoBrowser.h */,
+				49477A3C1772D7C400764A1B /* MWPhotoBrowser.m */,
+				49477A3D1772D7C400764A1B /* MWPhotoProtocol.h */,
+				49477A3E1772D7C400764A1B /* MWTapDetectingImageView.h */,
+				49477A3F1772D7C400764A1B /* MWTapDetectingImageView.m */,
+				49477A401772D7C400764A1B /* MWTapDetectingView.h */,
+				49477A411772D7C400764A1B /* MWTapDetectingView.m */,
+				49477A421772D7C400764A1B /* MWZoomingScrollView.h */,
+				49477A431772D7C400764A1B /* MWZoomingScrollView.m */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+		49477A4A1772D7CE00764A1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49477A4B1772D7D600764A1B /* MWPhotoBrowser.bundle */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49477A2F1772A45500764A1B /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				E5E8629E02E744BB99A3FDF9 /* Check Pods Manifest.lock */,
 				49477A081772A45500764A1B /* Sources */,
 				49477A091772A45500764A1B /* Frameworks */,
 				49477A0A1772A45500764A1B /* Resources */,
+				4016E29BC27F4704A245B3B4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,11 +231,43 @@
 				49477A221772A45500764A1B /* Default.png in Resources */,
 				49477A241772A45500764A1B /* Default@2x.png in Resources */,
 				49477A261772A45500764A1B /* Default-568h@2x.png in Resources */,
-				49477A2C1772A45500764A1B /* ViewController.xib in Resources */,
+				49477A4C1772D7D600764A1B /* MWPhotoBrowser.bundle in Resources */,
+				49477A511772D81D00764A1B /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4016E29BC27F4704A245B3B4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+		};
+		E5E8629E02E744BB99A3FDF9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49477A081772A45500764A1B /* Sources */ = {
@@ -175,7 +276,13 @@
 			files = (
 				49477A1C1772A45500764A1B /* main.m in Sources */,
 				49477A201772A45500764A1B /* AppDelegate.m in Sources */,
-				49477A291772A45500764A1B /* ViewController.m in Sources */,
+				49477A441772D7C400764A1B /* MWCaptionView.m in Sources */,
+				49477A451772D7C400764A1B /* MWPhoto.m in Sources */,
+				49477A461772D7C400764A1B /* MWPhotoBrowser.m in Sources */,
+				49477A471772D7C400764A1B /* MWTapDetectingImageView.m in Sources */,
+				49477A481772D7C400764A1B /* MWTapDetectingView.m in Sources */,
+				49477A491772D7C400764A1B /* MWZoomingScrollView.m in Sources */,
+				49477A501772D81D00764A1B /* Menu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +295,6 @@
 				49477A191772A45500764A1B /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		49477A2A1772A45500764A1B /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				49477A2B1772A45500764A1B /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -259,6 +358,7 @@
 		};
 		49477A301772A45500764A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E14231183CEF469897A93A70 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
@@ -270,6 +370,7 @@
 		};
 		49477A311772A45500764A1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E14231183CEF469897A93A70 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
@@ -298,6 +399,7 @@
 				49477A311772A45500764A1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
