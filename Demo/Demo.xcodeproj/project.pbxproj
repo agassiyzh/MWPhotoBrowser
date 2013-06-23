@@ -28,6 +28,14 @@
 		49477A511772D81D00764A1B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49477A4F1772D81D00764A1B /* Localizable.strings */; };
 		49477A541772D9E700764A1B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49477A521772D9E700764A1B /* ImageIO.framework */; };
 		49477A551772D9E700764A1B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49477A531772D9E700764A1B /* MessageUI.framework */; };
+		78C88D62177725540017EF55 /* photo1l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C88D5A177725540017EF55 /* photo1l.jpg */; };
+		78C88D63177725540017EF55 /* photo1m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C88D5B177725540017EF55 /* photo1m.jpg */; };
+		78C88D64177725540017EF55 /* photo2l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C88D5C177725540017EF55 /* photo2l.jpg */; };
+		78C88D65177725540017EF55 /* photo2m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C88D5D177725540017EF55 /* photo2m.jpg */; };
+		78C88D66177725540017EF55 /* photo3l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C88D5E177725540017EF55 /* photo3l.jpg */; };
+		78C88D67177725540017EF55 /* photo3m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C88D5F177725540017EF55 /* photo3m.jpg */; };
+		78C88D68177725540017EF55 /* photo4l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C88D60177725540017EF55 /* photo4l.jpg */; };
+		78C88D69177725540017EF55 /* photo4m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C88D61177725540017EF55 /* photo4m.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +71,14 @@
 		49477A4F1772D81D00764A1B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		49477A521772D9E700764A1B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		49477A531772D9E700764A1B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		78C88D5A177725540017EF55 /* photo1l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1l.jpg; sourceTree = "<group>"; };
+		78C88D5B177725540017EF55 /* photo1m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1m.jpg; sourceTree = "<group>"; };
+		78C88D5C177725540017EF55 /* photo2l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo2l.jpg; sourceTree = "<group>"; };
+		78C88D5D177725540017EF55 /* photo2m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo2m.jpg; sourceTree = "<group>"; };
+		78C88D5E177725540017EF55 /* photo3l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3l.jpg; sourceTree = "<group>"; };
+		78C88D5F177725540017EF55 /* photo3m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3m.jpg; sourceTree = "<group>"; };
+		78C88D60177725540017EF55 /* photo4l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo4l.jpg; sourceTree = "<group>"; };
+		78C88D61177725540017EF55 /* photo4m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo4m.jpg; sourceTree = "<group>"; };
 		B9D3D138B7294F2CB5D10E36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14231183CEF469897A93A70 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -120,6 +136,7 @@
 		49477A151772A45500764A1B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				78C88D59177725540017EF55 /* Photos */,
 				49477A4D1772D81D00764A1B /* Menu.h */,
 				49477A4E1772D81D00764A1B /* Menu.m */,
 				49477A4F1772D81D00764A1B /* Localizable.strings */,
@@ -173,6 +190,21 @@
 			name = Resources;
 			path = ../Resources;
 			sourceTree = "<group>";
+		};
+		78C88D59177725540017EF55 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				78C88D5A177725540017EF55 /* photo1l.jpg */,
+				78C88D5B177725540017EF55 /* photo1m.jpg */,
+				78C88D5C177725540017EF55 /* photo2l.jpg */,
+				78C88D5D177725540017EF55 /* photo2m.jpg */,
+				78C88D5E177725540017EF55 /* photo3l.jpg */,
+				78C88D5F177725540017EF55 /* photo3m.jpg */,
+				78C88D60177725540017EF55 /* photo4l.jpg */,
+				78C88D61177725540017EF55 /* photo4m.jpg */,
+			);
+			path = Photos;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -233,6 +265,14 @@
 				49477A261772A45500764A1B /* Default-568h@2x.png in Resources */,
 				49477A4C1772D7D600764A1B /* MWPhotoBrowser.bundle in Resources */,
 				49477A511772D81D00764A1B /* Localizable.strings in Resources */,
+				78C88D62177725540017EF55 /* photo1l.jpg in Resources */,
+				78C88D63177725540017EF55 /* photo1m.jpg in Resources */,
+				78C88D64177725540017EF55 /* photo2l.jpg in Resources */,
+				78C88D65177725540017EF55 /* photo2m.jpg in Resources */,
+				78C88D66177725540017EF55 /* photo3l.jpg in Resources */,
+				78C88D67177725540017EF55 /* photo3m.jpg in Resources */,
+				78C88D68177725540017EF55 /* photo4l.jpg in Resources */,
+				78C88D69177725540017EF55 /* photo4m.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
