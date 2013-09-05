@@ -33,6 +33,8 @@
 
 // Properties
 @property (nonatomic) BOOL displayActionButton;
+@property (nonatomic, retain) UIToolbar *toolbar;
+@property (nonatomic, assign) BOOL hideToolbar;
 
 // Init
 - (id)initWithPhotos:(NSArray *)photosArray  __attribute__((deprecated)); // Depreciated
