@@ -152,6 +152,7 @@ navigationBarBackgroundImageLandscapePhone = _navigationBarBackgroundImageLandsc
 @synthesize displayActionButton = _displayActionButton, actionsSheet = _actionsSheet;
 @synthesize progressHUD = _progressHUD;
 @synthesize previousViewControllerBackButton = _previousViewControllerBackButton;
+@synthesize toolbar = _toolbar;
 
 
 // FB PhotoBrowser
@@ -176,6 +177,7 @@ navigationBarBackgroundImageLandscapePhone = _navigationBarBackgroundImageLandsc
         _photos = [[NSMutableArray alloc] init];
         _displayActionButton = NO;
         _didSavePreviousStateOfNavBar = NO;
+      _hideToolbar = NO;
         
         // Listen for MWPhoto notifications
         [[NSNotificationCenter defaultCenter] addObserver:self
@@ -456,7 +458,7 @@ navigationBarBackgroundImageLandscapePhone = _navigationBarBackgroundImageLandsc
     [_recycledPages removeAllObjects];
     
     // Toolbar
-    if (numberOfPhotos > 1 || _displayActionButton) {
+    if (!_hideToolbar && (numberOfPhotos > 1 || _displayActionButton)) {
         [self.view addSubview:_toolbar];
     } else {
         [_toolbar removeFromSuperview];
@@ -594,20 +596,12 @@ navigationBarBackgroundImageLandscapePhone = _navigationBarBackgroundImageLandsc
 #pragma mark - Nav Bar Appearance
 
 - (void)setNavBarAppearance:(BOOL)animated {
-//    self.navigationController.navigationBar.tintColor = nil;
-//    self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
-//    if ([[UINavigationBar class] respondsToSelector:@selector(appearance)]) {
-//        [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
-//        [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsLandscapePhone];
-//    }
-    
-    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [backButton setFrame:CGRectMake(0.0f, 0.0f, 36.0f, 30.0f)];
-    [backButton setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
-    backButton.titleLabel.font = [UIFont boldSystemFontOfSize:14.0f];
-    [backButton addTarget:self action:@selector(_pop:) forControlEvents:UIControlEventTouchDown];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    self.navigationController.navigationBar.tintColor = nil;
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+    if ([[UINavigationBar class] respondsToSelector:@selector(appearance)]) {
+        [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+        [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsLandscapePhone];
+    }
 }
 
 - (IBAction)_pop:(id)sender {
