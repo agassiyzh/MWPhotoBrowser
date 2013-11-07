@@ -6,7 +6,6 @@
 //  Copyright 2010 d3i. All rights reserved.
 //
 
-#import <QuartzCore/QuartzCore.h>
 #import "MWCommon.h"
 #import "MWPhotoBrowser.h"
 #import "MWZoomingScrollView.h"
@@ -402,6 +401,10 @@
     
 	// Super
 	[super viewWillAppear:animated];
+
+  if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7")) {
+    self.navigationController.navigationBar.translucent = YES;
+  }
     
     // Status bar
     if ([UIViewController instancesRespondToSelector:@selector(prefersStatusBarHidden)]) {
@@ -434,6 +437,10 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
+
+  if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7")) {
+    self.navigationController.navigationBar.translucent = NO;
+  }
     
     // Check that we're being popped for good
     if ([self.navigationController.viewControllers objectAtIndex:0] != self &&
