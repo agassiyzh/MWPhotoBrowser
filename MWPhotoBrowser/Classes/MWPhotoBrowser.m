@@ -1186,7 +1186,11 @@
 }
 
 - (BOOL)areControlsHidden { return (_toolbar.alpha == 0); }
-- (void)hideControls { [self setControlsHidden:YES animated:YES permanent:NO]; }
+- (void)hideControls {
+  [self setControlsHidden:YES animated:YES permanent:NO];
+
+  [_delegate photoBrowserHideControls];
+}
 - (void)toggleControls { [self setControlsHidden:![self areControlsHidden] animated:YES permanent:NO]; }
 
 #pragma mark - Properties
