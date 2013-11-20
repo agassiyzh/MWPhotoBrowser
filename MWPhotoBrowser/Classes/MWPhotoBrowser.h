@@ -34,6 +34,7 @@
 - (void)photoBrowser:(MWPhotoBrowser *)photoBrowser actionButtonPressedForPhotoAtIndex:(NSUInteger)index;
 
 - (void)photoBrowserHideControls;
+- (void)photoBrowserShowControls;
 
 @end
 

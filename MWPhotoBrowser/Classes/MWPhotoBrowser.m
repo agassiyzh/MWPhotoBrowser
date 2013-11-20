@@ -1046,6 +1046,12 @@
     BOOL slideAndFade = SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7");
     CGFloat animatonOffset = 20;
     CGFloat animationDuration = (animated ? 0.35 : 0);
+
+  if(hidden) {
+    [_delegate photoBrowserHideControls];
+  }else {
+    [_delegate photoBrowserShowControls];
+  }
     
     // Status bar
     if (!_leaveStatusBarAlone) {
@@ -1188,8 +1194,6 @@
 - (BOOL)areControlsHidden { return (_toolbar.alpha == 0); }
 - (void)hideControls {
   [self setControlsHidden:YES animated:YES permanent:NO];
-
-  [_delegate photoBrowserHideControls];
 }
 - (void)toggleControls { [self setControlsHidden:![self areControlsHidden] animated:YES permanent:NO]; }
 
