@@ -25,6 +25,9 @@
 @protocol MWPhotoBrowserDelegate <NSObject>
 - (NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser;
 - (id<MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index;
+
+- (void)photoBrowserHideControl;
+
 @optional
 - (MWCaptionView *)photoBrowser:(MWPhotoBrowser *)photoBrowser captionViewForPhotoAtIndex:(NSUInteger)index;
 @end
@@ -41,9 +44,6 @@
 @property (nonatomic,strong) UIImageView *entranceImg;
 @property (nonatomic,strong) UIView *entranceImgMask;
 - (void) setTransparentForScreenshot:(float)alpha;
-
-
-
 
 // Properties
 @property (nonatomic) BOOL displayActionButton;
