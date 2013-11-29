@@ -1048,9 +1048,14 @@
     CGFloat animationDuration = (animated ? 0.35 : 0);
 
   if(hidden) {
-    [_delegate photoBrowserHideControls];
+    if ([_delegate respondsToSelector:@selector(photoBrowserHideControls)]) {
+      [_delegate photoBrowserHideControls];
+    }
+
   }else {
-    [_delegate photoBrowserShowControls];
+    if ([_delegate respondsToSelector:@selector(photoBrowserShowControls)]) {
+      [_delegate photoBrowserShowControls];
+    }
   }
     
     // Status bar
